@@ -1,0 +1,193 @@
+head,html,body,p,span,h1,h2,ul,div{ 
+	margin: 0;
+	padding: 0;
+}
+*{
+	margin: 0;
+	padding: 0;	
+}
+.head{
+	height: 747px;
+	width: 100%;
+}
+.top{
+	font-family: verdana;
+	font-weight: bold;
+	position: relative;
+}
+.tit-left{
+	width: 115px;
+	height: 35px;
+	float: left;
+	position: relative;
+	top: 12px;
+	bottom: 12px;
+	left: 59px;
+	background: url(../images/pic-one.png) left center no-repeat;
+}
+.tit-left h2{
+	position: absolute;
+	top: 3px;
+	right: 0;
+}
+.head .top nav{
+	height: 57px;
+	width: 50%;
+	display: inline-block;
+	vertical-align: middle;
+	position: absolute;
+	right: 150px;
+}
+.head .top nav ul{
+	height: 57px;
+	width: 100%;
+	line-height: 57px;
+	list-style: none;
+	position: relative;
+}
+.head .top nav ul li{
+	display: inline-block;
+	font-size: 14px;
+	color: #bdbdbe;
+	text-align: center;
+	padding: 0 30px;
+}
+.head .top nav ul li:hover{
+	color: #e7504e;
+	cursor: pointer;
+	/*border-bottom: #e75050 solid 3px;*/
+}
+.head .top nav ul li.move{
+	position: absolute;
+	width: 40px;
+	height: 5px;
+	left: 0;
+	top: 50px;
+	background-color: #e75050;
+	transition:left 0.5s;
+	-webkit-transition:left 0.5s;
+	-moz-transition:left 0.5s;
+	-o-transition:left 0.5s;
+}
+.head .top nav ul li:nth-child(1):hover .move{
+	left: 0;
+}
+.head .top nav ul li:nth-child(2):hover~.move{
+	left:107px;
+}
+.head .top nav ul li:nth-child(3):hover~.move{
+	left: 232px;
+}
+.head .top nav ul li:nth-child(4):hover~.move{
+	left: 355px;
+}
+.head .top nav ul li:nth-child(5):hover~.move{
+	left: 483px;
+}
+.tit-right-login{
+	position: absolute;
+	right: 0;
+	width: 123px;
+	line-height: 57px;
+	background: url(../images/login.png) left center no-repeat;
+}
+.tit-right-login span{
+	color: #e75050;
+	font-size: 14px;
+	position: relative;
+	left: 30px;
+	text-align: center;
+}
+.tit-right-login span:hover{
+	cursor: pointer;
+}
+.head .top .tit-right-login .move{
+	position: absolute;
+	top: 45px;
+	left: 22px;
+	width: 0;
+	height: 3px;
+	background-color: #e75050;
+	transition:width 0.5s;
+	-webkit-transition:width 0.5s;
+	-moz-transition:width 0.5s;
+	-o-transition:width 0.5s;
+}
+.head .top .tit-right-login span:nth-of-type(1):hover~.move{
+	width: 50px;
+}
+.tit-body{
+	position: relative;
+	display: block;
+	top: 55px;
+	width: 1279px;
+	height: 692px;
+	font-family: "Microsoft","微软雅黑";
+	background: url(../images/pic01.jpg) left center no-repeat;
+}
+.tit-body h1{
+	font-size: 61px;
+	color: #fdfcfc;
+	line-height: 95px;
+	position: relative;
+	top: 204px;
+	left: -15px;
+	transform: scaleX(0.85);
+}
+.tit-body p{
+	font-size: 23px;
+	color: #fffbfd;
+	line-height: 32px;
+	position: relative;
+	left: 180px;
+	top: 223px;
+}
+.head .top .tit-body .start-button{
+	width: 331px;
+	height: 64px;
+	background-color: #e7504e;
+	position: relative;
+	top: 287px;
+	left: 180px;
+}
+.head .top .tit-body .start-button span{
+	font-size: 30px;
+	position: absolute;
+	top: 10px;
+	left: 97px;
+	color: #fffbfd;
+}
+.middle{
+	width: 100%;
+	height: 252px;
+}
+.middle .piece{
+	width: 23%;
+	display: inline-block;
+	position: relative;
+	background:url(../images/ba.png) center center no-repeat;
+	top: 30px;
+}
+.middle .piece:nth-child(2){
+	background: url(../images/qi.png) center center no-repeat;
+}
+.middle .piece:nth-child(3){
+	background: url(../images/hua.png) center center no-repeat;
+}
+.middle .piece:nth-child(4){
+	background: url(../images/window.png) center center no-repeat;
+}
+.middle .piece img{
+	width: 100%;
+	height: 125px;
+	text-align: center;
+}
+.middle .piece p{
+	height: 53px;
+	font-size: 13px;
+	line-height: 27px;
+	text-align: center;
+	border-right: #bababa solid 2px;
+	position: relative;
+	top: 100px;
+}
